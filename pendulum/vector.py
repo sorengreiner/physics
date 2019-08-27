@@ -21,6 +21,9 @@ class Vector2d:
     def Mul(self, s):
         return Vector2d(self.x*s, self.y*s)
 
+    def Add(self, v):
+        return Vector2d(self.x + v.x, self.y + v.y)
+
 def Add(u, v):
     return Vector2d(u.x + v.x, u.y + v.y)
 
